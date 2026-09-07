@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "echo \"Static website - no build required\"",
+    "build:azure": "echo \"Static website - no build required\"",
     "start": "npx serve -s . -l 8080"
   },
   "dependencies": {

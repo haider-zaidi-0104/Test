@@ -1,0 +1,72 @@
+/* Centralized premium dark color system. Layout and component geometry remain in styles.css. */
+:root{
+  --bg-primary:#080b16;
+  --bg-secondary:#0f1424;
+  --bg-card:#151b2e;
+  --bg-elevated:#1b2340;
+  --accent-primary:#5b8cff;
+  --accent-secondary:#8b5cf6;
+  --accent-highlight:#22d3ee;
+  --text-primary:#f8fafc;
+  --text-secondary:#a7b0c0;
+  --text-muted:#74809a;
+  --border-color:rgba(139,92,246,.20);
+  --border-accent:rgba(34,211,238,.35);
+  --surface-subtle:rgba(21,27,46,.72);
+  --glow-primary:rgba(91,140,255,.16);
+  --glow-highlight:rgba(34,211,238,.13);
+  --bg:var(--bg-primary);
+  --panel:var(--surface-subtle);
+  --white:var(--text-primary);
+  --muted:var(--text-secondary);
+  --line:var(--border-color);
+  --cyan:var(--accent-highlight);
+  --violet:var(--accent-secondary);
+  --pink:var(--accent-primary);
+}
+
+body{background:var(--bg-primary);color:var(--text-primary)}
+.red-glow{background:radial-gradient(circle,var(--glow-primary),rgba(139,92,246,.08) 30%,transparent 70%)}
+.header{background:rgba(8,11,22,.78)}
+.header.scrolled{border-color:var(--border-color)}
+.logo span{border-color:var(--accent-highlight);color:var(--accent-highlight);background:rgba(34,211,238,.06);box-shadow:0 0 25px var(--glow-highlight)}
+.links a{color:var(--text-secondary)}
+.links a:hover,.hire i,.kicker,footer a:hover{color:var(--accent-highlight)}
+.hire,.available,.btn.black{border-color:var(--border-color);background:rgba(21,27,46,.58)}
+.menu{color:var(--text-primary)}
+.available{color:var(--text-secondary)}
+.available span{background:var(--accent-highlight);box-shadow:0 0 13px var(--accent-highlight)}
+.hero h1 strong{background:linear-gradient(100deg,var(--accent-highlight),var(--accent-primary),var(--accent-secondary));-webkit-background-clip:text;background-clip:text}
+.lead,.copy{color:var(--text-secondary)}
+.btn{border-color:var(--border-color)}
+.btn.red{background:linear-gradient(100deg,var(--accent-primary),var(--accent-secondary));color:var(--text-primary);box-shadow:0 10px 28px rgba(91,140,255,.20)}
+.btn.black:hover,.skills div:hover,.contact-grid a:hover{border-color:var(--border-accent)}
+.quick div{border-color:var(--accent-primary)}
+.quick small,.edu small,.edu span,.exp small,.skills small,.cert small,.contact-grid small{color:var(--text-muted)}
+.grid{background-image:linear-gradient(rgba(34,211,238,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,.07) 1px,transparent 1px)}
+.ring{border-color:rgba(34,211,238,.30)}
+.r2{border-color:rgba(139,92,246,.32)}
+.r3{border-color:var(--accent-primary);box-shadow:0 0 55px var(--glow-primary)}
+.shield{background:linear-gradient(145deg,rgba(27,35,64,.92),rgba(8,11,22,.96));border-color:var(--border-accent);color:var(--accent-highlight);box-shadow:0 0 70px var(--glow-highlight)}
+.terminal{background:rgba(15,20,36,.88);border-color:var(--border-color)}
+.term-head i{background:var(--text-muted)}
+.term-head span,.term-body p{color:var(--text-muted)}
+.term-body em{color:var(--text-secondary)}
+.term-body b,.float span,.tag,.cert>strong,.contact-grid i{color:var(--accent-highlight)}
+.float{border-color:var(--border-color);background:rgba(21,27,46,.82)}
+.label{color:var(--text-muted)}
+.section h2 strong,.center h2 strong,.contact h2 strong{background:linear-gradient(100deg,var(--accent-highlight),var(--accent-primary),var(--accent-secondary));-webkit-background-clip:text;background-clip:text}
+.edu b{color:var(--text-primary)}
+.black{background:linear-gradient(180deg,var(--bg-secondary),var(--bg-primary));border-color:var(--border-color)}
+.num,.project-num{color:rgba(91,140,255,.28)}
+.tag{border-color:rgba(34,211,238,.25)}
+.exp ul,.muted,.pills span,.cert p,.project p:not(.kicker),.contact-main>p:not(.kicker),.future{color:var(--text-secondary)}
+.skills div,.cert,.contact-grid a{border-color:var(--border-color);background:rgba(21,27,46,.58)}
+.cert>strong{background:rgba(34,211,238,.07);border-color:rgba(34,211,238,.22)}
+.cert em{color:var(--text-muted)}
+.future{border-color:var(--border-color);background:rgba(21,27,46,.28)}
+.future b{color:var(--text-primary)}
+.contact{background:radial-gradient(circle at 80% 50%,var(--glow-primary),transparent 30%),radial-gradient(circle at 20% 80%,rgba(139,92,246,.09),transparent 25%),var(--bg-secondary)}
+footer{border-color:var(--border-color);color:var(--text-muted)}
+@keyframes pulse{50%{box-shadow:0 0 100px rgba(91,140,255,.30);transform:scale(1.03)}}
+@media(max-width:900px){.links.open{background:var(--bg-secondary);border-color:var(--border-color)}}
